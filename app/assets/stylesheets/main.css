@@ -1,0 +1,121 @@
+/*not currently working*/
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+
+aside {
+  background-color: #ef4723;
+  width: 100%;
+  height: 70vh;
+  color: #222;
+}
+
+aside h1 {
+  font-size: 2em;
+ }
+
+aside h2 {
+  font-size: 1.5em;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.project-container {
+  clear: both;
+  font-family: 'Raleway';
+  max-width: 500px;
+}
+
+.project-container h3 {
+  color: #ef4723;
+}
+
+.project-container p {
+  float: left;
+  width:60%;
+}
+
+.project-container img {
+  float: right;
+  width: 40%;
+}
+
+li {
+  font-weight: bold;
+}
+
+#info {
+  -webkit-animation-delay: 2s;
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+main {
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+}
+
+
+#main-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+main h2 {
+  color: #ef4723;
+  text-align: left;
+}
+
+.project-container p {
+  float: left;
+  text-align: left;
+}
+
+.open {
+  height: 30vh;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+  aside {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+  }
+
+  aside h1 {
+    font-size: 4em;
+  }
+
+  aside h2 {
+    font-size: 2em;
+  }
+
+  main {
+    margin-right: 0px;
+    width: 50%;
+  }
+}

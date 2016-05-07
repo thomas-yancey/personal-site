@@ -1,0 +1,60 @@
+<div class="six columns">
+  <aside>
+    <div id="info">
+      <h1>Thomas Yancey</h1>
+      <%= image_tag "haybales.jpg", class: "img-circle", width: "200", height: "200" %>
+      <h2>Web Developer, Pizza enthusiast and overall great guy!</h2>
+    </div>
+  </aside>
+</div>
+<main>
+  <div id="main-container">
+    <article id="about">
+      <h2>About Me</h2>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </article>
+
+    <article id="skills">
+      <h2>Skills</h2>
+      <ul id="list-skills">
+        <li>Ruby</li>
+        <li>Rails</li>
+        <li>Javascript</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>PostgreSQL</li>
+        <li>Heroku</li>
+        <li>Git</li>
+      </ul>
+    </article>
+
+
+
+    <article id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-text">
+          <h3><a href="http://fast-tor-35920.herokuapp.com/">CitiBike Map</a></h3>
+          <p>I wanted to take advantage of the citiBike API to make a realtime map of the available bikes in a web application. The map allows users to specify the amount of bikes or docks they require in order to chose the correct location, lists all of the stations that are not out of service, and will list the five closest stations based on your location. You can use live GPS tracking by clicking the gps button in the bottom left corner of the map.</p>
+        </div>
+        <%= link_to( image_tag("citi-bike.png", width: "250", height: "250"), "http://fast-tor-35920.herokuapp.com/") %>
+      </div>
+
+      <div class="project-container">
+        <h2>Project 2</h2>
+      </div>
+
+    </article>
+
+    <article id="contact">
+      <h2>Get in touch</h2>
+      <%= form_for @email do |f| %>
+        <%= f.text_field :email, placeholder: "Email" %>
+
+        <%= f.text_area :message, placeholder: "Message" %>
+
+        <%= f.submit %>
+      <% end %>
+    </article>
+  </div>
+</main>
