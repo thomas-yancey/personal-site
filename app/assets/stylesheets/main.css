@@ -63,7 +63,8 @@ form .new_email {text-align: left;}
 }
 
 #info #social {
-  animation: slidesocial 3s;
+  animation-fill-mode: forwards;
+  animation: slidesocial 2.7s;
 }
 
 #about { animation: fadein .4s ease-in;}
@@ -125,8 +126,10 @@ form .new_email {text-align: left;}
   }
 
   @keyframes slidesocial {
-      from { margin-left: -1500px;}
-      to   { margin-left: 0px; }
+      from { margin-left: -1350px;
+             opacity: 0;}
+      to   { margin-left: 0px;
+             opacity: 1; }
   }
   /* Firefox < 16 */
 /*  @-moz-keyframes fadein {
