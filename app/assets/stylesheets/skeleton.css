@@ -37,13 +37,6 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
 
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-a:hover {
-  color: #0FA0CE; }
-
-
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
@@ -75,7 +68,8 @@ textarea {
      -moz-appearance: none;
           appearance: none; }
 textarea {
-  min-height: 65px;
+  min-height: 200px;
+  width: 100%;
   padding-top: 6px;
   padding-bottom: 6px; }
 input[type="email"]:focus,
@@ -139,9 +133,7 @@ figure,
 table,
 p,
 ul,
-ol,
-form {
-  margin-bottom: 2.5rem; }
+ol
 
 
 /* Utilities
