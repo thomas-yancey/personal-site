@@ -6,7 +6,7 @@ a {
 aside {
   background-color: #ef4723;
   width: 100%;
-  height: 70vh;
+  height: 450px;
   color: #222;
 }
 
@@ -39,6 +39,7 @@ li { font-weight: bold; }
 }
 
 #main-container {
+  /*clear: both;*/
   width: 90%;
   margin: 0 auto;
   max-width: 500px;
@@ -63,6 +64,8 @@ form .new_email {text-align: left;}
     width: 40px;
     height: auto;
 }
+
+h1, h2, h3, h4, h5, h6 {margin-bottom: 2rem;}
 
 @media (min-width: 400px) {}
 
