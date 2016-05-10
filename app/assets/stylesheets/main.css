@@ -35,10 +35,8 @@ li { font-weight: bold; }
   text-align: center;
   margin: 0 auto;
   max-width: 400px;
-  /*animation: fadein 1s;*/
+  animation: fadein 1s;
 }
-
-/*#info .img-circle { animation: grow .5s ease-in;}*/
 
 main { padding-top: 20px;}
 
@@ -57,36 +55,45 @@ article h2 {
 
 form .new_email {text-align: left;}
 
-.img-circle {
-  border-radius: 50%;
-  /*animation: social 1s;*/
-}
+.img-circle { border-radius: 50%;}
+
+#social img {
+    width: 40px;
+    height: auto;
+  }
 
 @media (min-width: 400px) {}
 
 @media (min-width: 550px) {}
-
-@media (min-width: 750px) {
 
   #info #social {
     animation-fill-mode: forwards;
     animation: slidesocial 2s;
   }
 
-  #about { animation: fadein .4s ease-in;}
   #about h2 { animation: slideleft .4s ease-in;}
+
+  #skills h2 { animation: slideleft .5s ease-in;}
+
+  #projects h2{ animation: slideleft .7s ease-in;}
+
+  #contact h2, form { animation: slideleft .9s ease-in;}
+
+  img {max-width:100%; height:auto}
+
+@media (min-width: 769px) {
+
+  /*#info .img-circle { animation: grow .5s ease-in;}*/
+  #about { animation: fadein .4s ease-in;}
   #about p { animation: slideleft .5s ease-in;}
 
   #skills { animation: fadein .5s ease-in;}
-  #skills h2 { animation: slideleft .5s ease-in;}
   #skills ul { animation: slideleft .6s ease-in;}
 
   #projects { animation: fadein .7s ease-in;}
-  #projects h2{ animation: slideleft .7s ease-in;}
   #projects h4, p { animation: slideleft .8s ease-in;}
-
   #contact { animation: fadein .9s ease-in;}
-  #contact h2, form { animation: slideleft .9s ease-in;}
+
   aside {
     width: 50%;
     height: 100vh;
@@ -100,32 +107,38 @@ form .new_email {text-align: left;}
 }
 
 /* css animations*/
-  @keyframes social {
+  @-webkit-keyframes social {
     from { -webkit-transform: scale(0,0); }
     to { -webkit-transform: scale(1,1);}
   }
 
-  @keyframes grow {
-    0% { height: 10%; width: 20%; }
+  @-webkit-keyframes grow {
+    0% { height: 20%; width: 20%; }
     100% { height: 100%; margin: 0% 0%; }
   }
 
-  @keyframes fadein {
+  @-webkit-keyframes fadein {
       from { opacity: 0;}
       to   { opacity: 1;}
   }
 
-  @keyframes slidedown {
+ /*Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0;}
+      to   { opacity: 1;}
+  }
+
+  @-webkit-keyframes slidedown {
       from { margin-top: 30px;}
       to   { margin-top: 0px; }
   }
 
-  @keyframes slideleft {
+  @-webkit-keyframes slideleft {
       from { margin-left: 100px;}
       to   { margin-left: 0px; }
   }
 
-  @keyframes slidesocial {
+  @-webkit-keyframes slidesocial {
       from { margin-left: -1050px;
              opacity: 0;}
       to   { margin-left: 0px;
@@ -137,14 +150,8 @@ form .new_email {text-align: left;}
       to   { opacity: 1; }
   }
 */
-  /* Safari, Chrome and Opera > 12.1 */
-  /*@-webkit-keyframes fadein {
-      from { opacity: 0;
-             margin-top: -20px;}
-      to   { opacity: 1;
-             margin-top: 0px; }
-  }
-*/
+
+
   /* Internet Explorer */
 /*  @-ms-keyframes fadein {
       from { opacity: 0; }
