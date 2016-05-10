@@ -28,17 +28,17 @@ li { font-weight: bold; }
 #info {
   -webkit-animation-delay: 2s;
   position: relative;
-  top: 45%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: center;
   margin: 0 auto;
   max-width: 400px;
-  animation: fadein 1s;
+  /*animation: fadein 1s;*/
 }
 
-#info .img-circle { animation: grow .5s ease-in;}
+/*#info .img-circle { animation: grow .5s ease-in;}*/
 
 main { padding-top: 20px;}
 
@@ -59,34 +59,34 @@ form .new_email {text-align: left;}
 
 .img-circle {
   border-radius: 50%;
-  animation: social 1s;
+  /*animation: social 1s;*/
 }
-
-#info #social {
-  animation-fill-mode: forwards;
-  animation: slidesocial 2.7s;
-}
-
-#about { animation: fadein .4s ease-in;}
-#about h2 { animation: slideleft .4s ease-in;}
-#about p { animation: slideleft .5s ease-in;}
-
-#skills { animation: fadein .5s ease-in;}
-#skills h2 { animation: slideleft .5s ease-in;}
-#skills ul { animation: slideleft .6s ease-in;}
-
-#projects { animation: fadein .7s ease-in;}
-#projects h2{ animation: slideleft .7s ease-in;}
-#projects h4, p { animation: slideleft .8s ease-in;}
-
-#contact { animation: fadein .9s ease-in;}
-#contact h2, form { animation: slideleft .9s ease-in;}
 
 @media (min-width: 400px) {}
 
 @media (min-width: 550px) {}
 
 @media (min-width: 750px) {
+
+  #info #social {
+    animation-fill-mode: forwards;
+    animation: slidesocial 2s;
+  }
+
+  #about { animation: fadein .4s ease-in;}
+  #about h2 { animation: slideleft .4s ease-in;}
+  #about p { animation: slideleft .5s ease-in;}
+
+  #skills { animation: fadein .5s ease-in;}
+  #skills h2 { animation: slideleft .5s ease-in;}
+  #skills ul { animation: slideleft .6s ease-in;}
+
+  #projects { animation: fadein .7s ease-in;}
+  #projects h2{ animation: slideleft .7s ease-in;}
+  #projects h4, p { animation: slideleft .8s ease-in;}
+
+  #contact { animation: fadein .9s ease-in;}
+  #contact h2, form { animation: slideleft .9s ease-in;}
   aside {
     width: 50%;
     height: 100vh;
@@ -103,7 +103,7 @@ form .new_email {text-align: left;}
   @keyframes social {
     from { -webkit-transform: scale(0,0); }
     to { -webkit-transform: scale(1,1);}
-}
+  }
 
   @keyframes grow {
     0% { height: 10%; width: 20%; }
@@ -126,7 +126,7 @@ form .new_email {text-align: left;}
   }
 
   @keyframes slidesocial {
-      from { margin-left: -1350px;
+      from { margin-left: -1050px;
              opacity: 0;}
       to   { margin-left: 0px;
              opacity: 1; }
