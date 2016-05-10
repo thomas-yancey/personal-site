@@ -3,6 +3,7 @@
     <h1>Thomas Yancey</h1>
     <%= image_tag "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAa0AAAAJDgyZmY3ODk5LWQxNWEtNDQzMy05N2M3LTJlODI1ZmE2YjljMg.jpg", class: "img-circle", width: "200", height: "200" %>
     <h2>Full Stack Developer</h2>
+    <h5><a href="mailto:tomyncy618@gmail.com">tomyancey1@gmail.com</h5>
     <div id="social">
         <%= link_to (image_tag "linkedin.png"), "https://www.linkedin.com/in/tomyancey" %>
         <%= link_to (image_tag "github.png"),"https://github.com/thomas-yancey" %>
@@ -41,14 +42,6 @@
       </div>
     </article>
 
-    <article id="contact">
-      <h2>Get in touch</h2>
-      <%= form_for @email do |f| %>
-        <%= f.text_field :email, placeholder: "Email" %>
-        <%= f.text_area :message, placeholder: "Message" %>
-        <%= f.submit %>
-      <% end %>
-    </article>
-
+<!-- Add mailer here -->
   </div>
 </main>
