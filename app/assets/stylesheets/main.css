@@ -38,8 +38,6 @@ li { font-weight: bold; }
   animation: fadein 1s;
 }
 
-main { padding-top: 20px;}
-
 #main-container {
   width: 90%;
   margin: 0 auto;
@@ -69,6 +67,8 @@ form .new_email {text-align: left;}
 @media (min-width: 400px) {}
 
 @media (min-width: 550px) {}
+
+  main { padding-top: 20px;}
 
   #info #social {
     animation-fill-mode: forwards;
