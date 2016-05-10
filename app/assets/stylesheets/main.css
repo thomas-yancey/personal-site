@@ -55,12 +55,16 @@ article h2 {
 
 form .new_email {text-align: left;}
 
-.img-circle { border-radius: 50%;}
+.img-circle {
+  border-radius: 50%;
+  width: 160px;
+  height: auto;
+}
 
 #social img {
     width: 40px;
     height: auto;
-  }
+}
 
 @media (min-width: 400px) {}
 
@@ -79,7 +83,7 @@ form .new_email {text-align: left;}
 
   #contact h2, form { animation: slideleft .9s ease-in;}
 
-  img {max-width:100%; height:auto}
+  img, .img-circle {max-width:100%; height:auto}
 
 @media (min-width: 769px) {
 
