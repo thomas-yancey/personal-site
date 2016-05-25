@@ -15,7 +15,7 @@
   <div id="main-container">
     <article id="about">
       <h2>About Me</h2>
-      <p>My first job I worked in the financial industry. It was very data intensive, we would have large pools of data that needed to appropriately be tracked and managed. Working in Excel for sometime I quickly realized the power of technology in business and productivity. Slowly I began to write scripts for web scraping which opened my eyes up to the idea of programming. I love building projects from scratch that can be meaningful and useful by leveraging the power of computers and the internet. I have a passion for developing web applications and would like to find a place where my knowledge and skills can grow.</p>
+      <p> I love building projects from scratch that can be meaningful and useful by leveraging the power of computers and the internet. I have a passion for developing web applications. Please contact me if you would like to connect.</p>
     </article>
 
     <article id="skills">
@@ -34,14 +34,35 @@
 
     <article id="projects">
       <h2>Projects</h2>
+
       <div class="project-container">
         <div class="project-text">
-          <h4><a href="http://fast-tor-35920.herokuapp.com/">CitiBike Map</a></h4>
+          <h4><%= link_to "Concert Buddy", "http://concertbuddy.herokuapp.com" %></h4>
+          <p>Concert Buddy was originally conceived at a Spotify hackathon. The intent of the application is to be the meetup for concerts. Concert Buddy utilizes the Songkick and Spotify APIs to collect concert and artist information. You can search for concerts by artist, location and desired dates. For each event you can view information about the headlining artist and listen to them via spotify or buy tickets through Songkick.  From there you can create a group or join a pre-existing one. Once you are a member of a group you can message the rest of the groups to plan the event. </p>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div class="project-text">
+          <h4><%= link_to "CitiBike Map", "http://fast-tor-35920.herokuapp.com/" %></h4>
           <p>I wanted to take advantage of the citiBike API to make a realtime map of the available bikes in a web application. The map allows users to specify the amount of bikes or docks they require in order to chose the correct location, lists all of the stations that are not out of service, and will list the five closest stations based on your location. You can use live GPS tracking by clicking the gps button in the bottom left corner of the map.</p>
         </div>
       </div>
+
     </article>
 
-<!-- Add mailer here -->
+    <article id="contact-form">
+
+      <h2>Contact</h2>
+
+      <%= form_for @email do |f| %>
+
+        <%= f.text_field :address, placeholder: "Email Address" %><br>
+        <%= f.text_area :message, placeholder: "Message" %>
+
+        <%= f.submit %>
+      <% end %>
+    </article>
+
   </div>
 </main>

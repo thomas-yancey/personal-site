@@ -3,6 +3,10 @@ a {
   text-decoration: none;
  }
 
+ a:hover {
+  color: gray;
+ }
+
 aside {
   background-color: #ef4723;
   width: 100%;
