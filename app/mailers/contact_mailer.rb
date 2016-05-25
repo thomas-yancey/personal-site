@@ -1,6 +1,7 @@
 class ContactMailer < ApplicationMailer
 
   def contact_email(email)
+
     @address = email.address
     @message = email.message
 
