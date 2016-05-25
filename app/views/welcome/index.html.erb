@@ -12,7 +12,26 @@
 </aside>
 
 <main>
+
   <div id="main-container">
+
+  <% if flash %>
+    <% flash.each do |type,flash_message| %>
+      <% if type == "notice" %>
+        <h4 class="notice"><%= flash_message %></h4>
+      <% else %>
+        <h4 class="danger"><%= flash_message %></h4>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <% if @errors %>
+    <% @errors.each do |error| %>
+      <p><%= error %>
+    <% end %>
+  <% end %>
+
+
     <article id="about">
       <h2>About Me</h2>
       <p> I love building projects from scratch that can be meaningful and useful by leveraging the power of computers and the internet. I have a passion for developing web applications. Please contact me if you would like to connect.</p>
