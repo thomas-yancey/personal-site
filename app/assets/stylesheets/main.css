@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {margin-bottom: 2rem;}
 
   #projects h2{ animation: slideleft .7s ease-in;}
 
-  #contact h2, h5, form { animation: slideleft .9s ease-in;}
+  #contact h2 { animation: slideleft .9s ease-in;}
 
   img, .img-circle {max-width:100%; height:auto}
 
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {margin-bottom: 2rem;}
 
   #projects { animation: fadein .7s ease-in;}
   #projects h4, p { animation: slideleft .8s ease-in;}
-  #contact { animation: fadein .9s ease-in;}
+  h4, form { animation: slideleft 1s ease-in;}
 
   aside {
     width: 50%;
