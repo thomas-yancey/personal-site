@@ -15,7 +15,7 @@ class EmailsController < ApplicationController
       @errors = email.errors.full_messages
       @email = email
     end
-    render "/welcome/index"
+    redirect_to root_path
   end
 
   private
