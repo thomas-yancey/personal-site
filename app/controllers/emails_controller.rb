@@ -10,12 +10,14 @@ class EmailsController < ApplicationController
       ContactMailer.contact_email(email).deliver_later
       flash[:notice] = "Thanks for reaching out! I will get back to you shortly"
       @email = Email.new
+      redirect_to root_path
     else
       flash[:danger] = "Your message was unable to process, please check the following"
       @errors = email.errors.full_messages
       @email = email
+      render "/welcome/index"
     end
-    redirect_to root_path
+
   end
 
   private
