@@ -1,8 +1,5 @@
 class EmailsController < ApplicationController
 
-  def new
-  end
-
   def create
     flash.clear
     email = Email.new(message_params)

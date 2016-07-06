@@ -27,7 +27,7 @@
 
     <% if @errors %>
       <% @errors.each do |error| %>
-        <p><%= error %>
+        <h5><%= error %></h5>
       <% end %>
     <% end %>
 
@@ -79,15 +79,15 @@
 
     <article id="contact">
 
-      <h4><%= link_to "View my Resume", resumes_path %></h4>
+      <h4><%= link_to "View my Resume", resume_path %></h4>
 
       <h2>Contact</h2>
 
 
       <%= form_for @email do |f| %>
 
-        <%= f.text_field :address, placeholder: "Email Address" %><br>
-        <%= f.text_area :message, placeholder: "Message" %>
+        <%= f.text_field :address, placeholder: "Email Address", :required => true%><br>
+        <%= f.text_area :message, placeholder: "Message", :required => true%>
 
         <%= f.submit "Send Message" %>
       <% end %>

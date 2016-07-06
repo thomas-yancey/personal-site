@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {margin-bottom: 2rem;}
 
   #skills h2 { animation: slideleft .5s ease-in;}
 
-  #projects h2{ animation: slideleft .7s ease-in;}
+  #projects h2 { animation: slideleft .7s ease-in;}
 
   #contact h2 { animation: slideleft .9s ease-in;}
 

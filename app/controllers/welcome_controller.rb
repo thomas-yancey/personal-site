@@ -4,4 +4,8 @@ class WelcomeController < ApplicationController
     @email = Email.new
   end
 
+  def resume
+
+  end
+
 end
