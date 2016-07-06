@@ -15,26 +15,26 @@
 
   <div id="main-container">
 
-  <% if flash %>
-    <% flash.each do |type,flash_message| %>
-      <% if type == "notice" %>
-        <h4 class="notice"><%= flash_message %></h4>
-      <% else %>
-        <h4 class="danger"><%= flash_message %></h4>
+    <% if flash %>
+      <% flash.each do |type,flash_message| %>
+        <% if type == "notice" %>
+          <h4 class="notice"><%= flash_message %></h4>
+        <% else %>
+          <h4 class="danger"><%= flash_message %></h4>
+        <% end %>
       <% end %>
     <% end %>
-  <% end %>
 
-  <% if @errors %>
-    <% @errors.each do |error| %>
-      <p><%= error %>
+    <% if @errors %>
+      <% @errors.each do |error| %>
+        <p><%= error %>
+      <% end %>
     <% end %>
-  <% end %>
 
 
     <article id="about">
       <h2>About Me</h2>
-      <p> I love building projects from scratch that can be meaningful and useful by leveraging the power of computers and the internet. I have a passion for developing web applications. Please contact me if you would like to connect.</p>
+      <p>I love building tools from scratch that can be meaningful and useful. I have a passion for developing web applications and would like to leverage my previous experience in financial management as I continue to grow as a developer. Please feel free to contact me below.</p>
     </article>
 
     <article id="skills">
@@ -56,6 +56,13 @@
 
       <div class="project-container">
         <div class="project-text">
+          <h4><%= link_to "Action Cable Chat", "http://action-cablechat.herokuapp.com" %></h4>
+          <p>A basic chat application that gave me a chance to work with one of the main new features in Rails 5. The app uses action cable for the implementation of WebSockets. I used Redis to act as a data store for the action cable channels. All chat is real time and the app also notifies you when users enter or exit a room. To give it a test run just create a user, open two browsers to the open group channel and type a message and see it arrive on both windows. You can also create private rooms and invite anyone that is already on the site to join.</p>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div class="project-text">
           <h4><%= link_to "Concert Buddy", "http://concertbuddy.herokuapp.com" %></h4>
           <p>Concert Buddy was originally conceived at a Spotify hackathon. The intent of the application is to be the meetup for concerts. Concert Buddy utilizes the Songkick and Spotify APIs to collect concert and artist information. You can search for concerts by artist, location and desired dates. For each event you can view information about the headlining artist and listen to them via spotify or buy tickets through Songkick.  From there you can create a group or join a pre-existing one. Once you are a member of a group you can message the rest of the groups to plan the event. </p>
         </div>
@@ -72,8 +79,10 @@
 
     <article id="contact">
 
-      <h2>Contact</h2>
       <h4><%= link_to "View my Resume", resumes_path %></h4>
+
+      <h2>Contact</h2>
+
 
       <%= form_for @email do |f| %>
 
