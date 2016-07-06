@@ -138,12 +138,6 @@ h1, h2, h3, h4, h5, h6 {margin-bottom: 2rem;}
       to   { opacity: 1;}
   }
 
- /*Safari, Chrome and Opera > 12.1 */
-  @-webkit-keyframes fadein {
-      from { opacity: 0;}
-      to   { opacity: 1;}
-  }
-
   @-webkit-keyframes slidedown {
       from { margin-top: 30px;}
       to   { margin-top: 0px; }
@@ -160,12 +154,40 @@ h1, h2, h3, h4, h5, h6 {margin-bottom: 2rem;}
       to   { margin-left: 0px;
              opacity: 1; }
   }
-  /* Firefox < 16 */
-/*  @-moz-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
+   /*Firefox < 16 */
+
+  @-moz-keyframes social {
+    from { -moz-transform: scale(0,0); }
+    to { -moz-transform: scale(1,1);}
   }
-*/
+
+  @-moz-keyframes grow {
+    0% { height: 20%; width: 20%; }
+    100% { height: 100%; margin: 0% 0%; }
+  }
+
+  @-moz-keyframes fadein {
+      from { opacity: 0;}
+      to   { opacity: 1;}
+  }
+
+  @-moz-keyframes slidedown {
+      from { margin-top: 30px;}
+      to   { margin-top: 0px; }
+  }
+
+  @-moz-keyframes slideleft {
+      from { margin-left: 100px;}
+      to   { margin-left: 0px; }
+  }
+
+  @-moz-keyframes slidesocial {
+      from { margin-left: -1050px;
+             opacity: 0;}
+      to   { margin-left: 0px;
+             opacity: 1; }
+  }
+
 
 
   /* Internet Explorer */
