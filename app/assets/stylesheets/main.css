@@ -3,6 +3,32 @@
   margin: 0 auto;
 }
 
+.technologies {
+  display: block;
+}
+
+.tech-icon {
+  display: inline-block;
+  float: left;
+  width: 30px;
+  padding-right: 10px;
+  height: auto;
+}
+
+#list-skills {
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+#list-skills li {
+  display: inline-block;
+}
+
+p {
+  clear: both;
+}
+
 a {
   color:inherit;
   text-decoration: none;
@@ -91,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {margin-bottom: 2rem;}
 
   #skills h2 { animation: slideleft .5s ease-in;}
 
-  #projects h2 { animation: slideleft .7s ease-in;}
+  #projects h2, .technologies { animation: slideleft .7s ease-in;}
 
   #contact h2 { animation: slideleft .9s ease-in;}
 

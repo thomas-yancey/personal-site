@@ -31,33 +31,36 @@
       <% end %>
     <% end %>
 
-
-    <article id="about">
-      <h2>About Me</h2>
-      <p>I love building tools from scratch that can be meaningful and useful. I have a passion for developing web applications and would like to leverage my previous experience in financial management as I continue to grow as a developer.</p>
-    </article>
-
-    <article id="skills">
-      <h2>Skills</h2>
-      <ul id="list-skills">
-        <li>Ruby</li>
-        <li>Rails</li>
-        <li>Javascript</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Selenium</li>
-        <li>PostgreSQL</li>
-        <li>Heroku</li>
-        <li>Git</li>
-      </ul>
-    </article>
-
     <article id="projects">
       <h2>Projects</h2>
 
       <div class="project-container">
         <div class="project-text">
+          <h4><%= link_to "BrokeFlix", "http://brokeflix.com" %></h4>
+          <div class="technologies">
+            <%= link_to (image_tag "react-logo.svg", class: "tech-icon"), "https://facebook.github.io/react/" %>
+            <%= link_to (image_tag "rails-logo.png", class: "tech-icon"), "http://rubyonrails.org" %>
+            <%= link_to (image_tag "javascript-logo.png", class: "tech-icon"), "https://developer.mozilla.org/en-US/docs/Web/JavaScript" %>
+            <%= link_to (image_tag "postgres-icon.png", class: "tech-icon"), "https://www.postgresql.org" %>
+            <%= link_to (image_tag "heroku-pack-icon.png", class: "tech-icon"), "http://www.heroku.com" %>
+            <%= link_to (image_tag "amazon-web-services.png", class: "tech-icon"), "https://aws.amazon.com" %>
+            <%= link_to (image_tag "semantic-ui-icon.png", class: "tech-icon"), "http://www.semantic-ui.com" %>
+          </div>
+          <p>BrokeFlix is a single page app built with a detached React frontend and a Rails 5 API only mode backend. the frontend was configured with Webpack and is hosted on Amazon Web Services. BrokeFlix collects all movies that can currently be viewed on free streaming services and attaches their respective Metascore and RottenTomatoes scores for filtering. All filtering you do is applied immediately except in the case of the year range, infinite scroll and manual text search which are debounced to limit the number of unnecessary calls. It collects all of the information by making various calls to TheMovieDatabase and Guidebox API's to collect all movie details, trailers, sources, and cast data. All styling is done using Semantic UI and the site is completely responsive. Brokeflix was a great project to build upon my React skills.</p>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <div class="project-text">
           <h4><%= link_to "Action Cable Chat", "http://actionchattin.herokuapp.com" %></h4>
+          <div class="technologies">
+            <%= link_to (image_tag "rails-logo.png", class: "tech-icon"), "http://rubyonrails.org" %>
+            <%= link_to (image_tag "javascript-logo.png", class: "tech-icon"), "https://developer.mozilla.org/en-US/docs/Web/JavaScript" %>
+            <%= link_to (image_tag "redis-icon.png", class: "tech-icon"), "http://redis.io/" %>
+            <%= link_to (image_tag "postgres-icon.png", class: "tech-icon"), "https://www.postgresql.org" %>
+            <%= link_to (image_tag "heroku-pack-icon.png", class: "tech-icon"), "http://www.heroku.com" %>
+            <%= link_to (image_tag "semantic-ui-icon.png", class: "tech-icon"), "http://www.semantic-ui.com" %>
+          </div>
           <p>A basic chat application that gave me a chance to work with one of the main new features in Rails 5. The app uses action cable for the implementation of WebSockets. I used Redis to act as a data store for the action cable channels. All chat is real time and the app also notifies you when users enter or exit a room. To give it a test run just create a user, open two browsers to the open group channel and type a message and see it arrive on both windows. You can also create private rooms and invite anyone that is already on the site to join.</p>
         </div>
       </div>
@@ -65,6 +68,13 @@
       <div class="project-container">
         <div class="project-text">
           <h4><%= link_to "Concert Buddy", "http://concertbuddy.herokuapp.com" %></h4>
+          <div class="technologies">
+            <%= link_to (image_tag "rails-logo.png", class: "tech-icon"), "http://rubyonrails.org" %>
+            <%= link_to (image_tag "javascript-logo.png", class: "tech-icon"), "https://developer.mozilla.org/en-US/docs/Web/JavaScript" %>
+            <%= link_to (image_tag "heroku-pack-icon.png", class: "tech-icon"), "http://www.heroku.com" %>
+            <%= link_to (image_tag "postgres-icon.png", class: "tech-icon"), "https://www.postgresql.org" %>                        
+            <%= link_to (image_tag "spotify-icon.png", class: "tech-icon"), "https://developer.spotify.com" %>
+          </div>
           <p>Concert Buddy was originally conceived at a Spotify hackathon. The intent of the application is to be the meetup for concerts. Concert Buddy utilizes the Songkick and Spotify APIs to collect concert and artist information. You can search for concerts by artist, location and desired dates. For each event you can view information about the headlining artist and listen to them via spotify or buy tickets through Songkick.  From there you can create a group or join a pre-existing one. Once you are a member of a group you can message the rest of the groups to plan the event. </p>
         </div>
       </div>
@@ -72,11 +82,35 @@
       <div class="project-container">
         <div class="project-text">
           <h4><%= link_to "CitiBike Map", "http://fast-tor-35920.herokuapp.com/" %></h4>
+          <div class="technologies">
+            <%= link_to (image_tag "rails-logo.png", class: "tech-icon"), "http://rubyonrails.org" %>
+            <%= link_to (image_tag "javascript-logo.png", class: "tech-icon"), "https://developer.mozilla.org/en-US/docs/Web/JavaScript" %>
+            <%= link_to (image_tag "heroku-pack-icon.png", class: "tech-icon"), "http://www.heroku.com" %>
+            <%= link_to (image_tag "google-maps-icon.jpeg", class: "tech-icon"), "https://developers.google.com/maps/" %>
+            <%= link_to (image_tag "bootstrap-icon.jpeg", class: "tech-icon"), "http://www.getbootstrap.com" %>
+          </div>
           <p>I wanted to take advantage of the citiBike API to make a realtime map of the available bikes in a web application. The map allows users to specify the amount of bikes or docks they require in order to chose the correct location, lists all of the stations that are not out of service, and will list the five closest stations based on your location. You can use live GPS tracking by clicking the gps button in the bottom left corner of the map.</p>
         </div>
       </div>
 
     </article>
+
+    <!-- <article id="skills">
+      <h2>Skills</h2>
+      <ul id="list-skills">
+        <li class="skill-item">Ruby</li>
+        <li class="skill-item">Rails</li>
+        <li class="skill-item">Javascript</li>
+        <li class="skill-item">React</li>
+        <li class="skill-item">Webpack</li>
+        <li class="skill-item">HTML5</li>
+        <li class="skill-item">CSS3</li>
+        <li class="skill-item">Selenium</li>
+        <li class="skill-item">PostgreSQL</li>
+        <li class="skill-item">Heroku</li>
+        <li class="skill-item">Git</li>
+      </ul>
+    </article> -->
 
     <article id="contact">
       <h4><a href="http://blog.tomyancey.me">Checkout my blog</a></h4>
