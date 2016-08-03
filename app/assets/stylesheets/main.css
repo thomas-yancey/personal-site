@@ -25,6 +25,10 @@
   display: inline-block;
 }
 
+.tech-icon:hover {
+  opacity: 0.6;
+}
+
 p {
   clear: both;
 }
