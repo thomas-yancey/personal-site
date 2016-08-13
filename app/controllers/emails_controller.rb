@@ -3,6 +3,7 @@ class EmailsController < ApplicationController
   def create
     flash.clear
     email = Email.new(message_params)
+    binding.pry
     if email.save
       ContactMailer.contact_email(email).deliver_later
       flash[:notice] = "Thanks for reaching out! I will get back to you shortly"
